@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My top 3 sounds</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My top 3 sounds</h1>
+    <p>Assignment 5, individual part. Student: Elnura Zholdanova , group: MT2503</p>
+  </header>
+
+  <main>
+    <!-- Task 6 -->
+    <section id="task6" aria-labelledby="t6-title">
+      <h2 id="t6-title">Task 6. Counter with click events</h2>
+      <p class="counter-value" id="counter-value" aria-live="polite">0</p>
+      <div class="row">
+        <button type="button" id="increase">Increase</button>
+        <button type="button" id="decrease">Decrease</button>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </section>
+
+    <!-- Task 7 -->
+    <section id="task7" aria-labelledby="t7-title">
+      <h2 id="t7-title">Task 7. Live text preview</h2>
+      <label for="preview-input">Your text</label>
+      <input type="text" id="preview-input">
+      <p>Preview: <span id="preview-text" class="muted">Your text will appear here</span></p>
+      <p>Characters: <span id="char-count">0</span></p>
+      <button type="button" id="clear-btn">Clear</button>
+    </section>
+
+    <!-- Task 8 -->
+    <section id="task8" aria-labelledby="t8-title">
+      <h2 id="t8-title">Task 8. Change an image with a select</h2>
+      <label for="image-select">Choose a track</label>
+      <select id="image-select">
+        <option value="serdce">Сердце</option>
+        <option value="vahteram">Вахтерам</option>
+        <option value="prosto">Просто — сложно</option>
+      </select>
+      <figure>
+        <img id="place-image" src="images/serdce.jpg" alt="Cover of the track Сердце by passmurny: a broken heart, half white, half red, on a black background" width="320" height="320">
+        <figcaption id="place-caption">Сердце: passmurny</figcaption>
+      </figure>
+    </section>
+
+    <!-- Task 9 -->
+    <section id="task9" aria-labelledby="t9-title">
+      <h2 id="t9-title">Task 9. Keyboard events</h2>
+      <form id="key-form">
+        <label for="key-input">Type here (Enter shows the text, Escape clears)</label>
+        <input type="text" id="key-input" autocomplete="off">
+      </form>
+      <p id="key-status">Press a key in the input.</p>
+      <p>Result: <span id="key-result"></span></p>
+    </section>
+
+    <!-- Task 10 -->
+    <section id="task10" aria-labelledby="t10-title">
+      <h2 id="t10-title">Task 10. Mouse and focus events</h2>
+      <div class="row">
+        <div id="hover-card" class="card" tabindex="0">Hover or focus me</div>
+        <p id="card-instruction">Move the mouse over the card or press Tab to focus it.</p>
+      </div>
+      <p class="muted">
+        <code>mouseenter</code> and <code>focus</code> add the highlight and change the text;
+        <code>mouseleave</code> and <code>blur</code> remove the highlight and restore the text.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+:root {
+  --bg: #140a0c; --surface: #211316; --text: #f4eaea; --muted: #b9a5a8;
+  --accent: #c4232d; --accent-hover: #a51b24; --border: #43282d;
+  --highlight: #5a1a20; --highlight-border: #ff5560; --focus: #ffb703;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+header { padding: 28px 20px; background: #000; border-bottom: 4px solid var(--accent); }
+header h1 { margin: 0 0 4px; font-size: 1.8rem; }
+header p { margin: 0; color: var(--muted); }
+main { max-width: 720px; margin: 0 auto; padding: 20px; display: grid; gap: 20px; }
+section { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+h2 { margin-top: 0; font-size: 1.2rem; }
+label { display: block; font-weight: 600; margin-bottom: 6px; }
+input, select { width: 100%; max-width: 420px; padding: 8px 10px; font: inherit; color: var(--text); background: #2e1c20; border: 1px solid var(--border); border-radius: 6px; }
+button { padding: 8px 16px; font: inherit; color: #fff; background: var(--accent); border: 0; border-radius: 6px; cursor: pointer; }
+button:hover { background: var(--accent-hover); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.counter-value { font-size: 3rem; font-weight: 700; margin: 0 0 12px; }
+.muted { color: var(--muted); }
+code { color: #ff9aa1; }
+figure { margin: 16px 0 0; }
+img { max-width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--border); }
+.card { padding: 24px 28px; border: 2px solid var(--border); border-radius: 8px; background: #2e1c20; transition: background .2s, border-color .2s; }
+.card.highlight { background: var(--highlight); border-color: var(--highlight-border); }
